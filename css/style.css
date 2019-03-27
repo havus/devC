@@ -3,6 +3,12 @@
 	margin: 0;
 }
 
+body {
+	background-image: url(../assets/blue-wave.jpg);
+	background-attachment: cover;
+	background-position: 0 400px;
+}
+
 /* ========= NAVBAR ========= */
 @media (min-width: 992px) {
 	nav {
@@ -51,13 +57,25 @@ h5 {
 	text-transform: uppercase;
 }
 
-/* ============== PROFILE ============== */
+/* ============== ABOUT ME ============== */
+
+#about-me {
+	margin-top: -80px;
+}
+
+#tittle h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #2a4d69;
+	margin: 30px 0;
+}
+
 #skill {
 	margin-top: -95px;
 	min-height: 500px;
-	/* background-color: #b3cde0; */
-	/* (0px 0px, 100% 0px, 100% calc(100% - 70px), 0 100%); */
-	clip-path: polygon(0 80px, 100% 0%, 100% calc(100% - 80px), 0 100%);
+	/* color collection = rgb(86, 136, 211) rgb(152, 185, 238) #b3cde0  #e7eff6 */
+	*/ box-sizing: border-box;
+
 }
 
 .skill-box {
@@ -66,12 +84,11 @@ h5 {
 }
 
 #icon {
-	border: 2px solid rgba(231, 239, 246, 0.7);
+	border: 3px solid rgba(231, 239, 246, 0.7);
 	border-radius: 50%;
 	overflow: hidden;
-	height: 80px;
-	width: 80px;
-	/* background-color: white; */
+	height: 85px;
+	width: 85px;
 	margin: 15px auto;
 }
 
@@ -83,15 +100,12 @@ h5 {
 }
 
 #networking {
-	margin: 12px auto;
-}
-
-#hard-skill {
 	margin: 15px auto;
 }
 
-#help {
-	margin: 15px auto;
+#hard-skill,
+#collab {
+	margin: 17px auto;
 }
 
 .skill-box h3 {
@@ -99,29 +113,16 @@ h5 {
 	color: #4b86b4;
 }
 
-.skill-box ul {
-	padding: 25px;
+.quote {
+	margin: 50px;
 	text-align: center;
-	color: rgb(78, 78, 78);
+	color: rgba(73, 73, 73, 0.7);
 }
 
-/* ============== PROFILE ============== */
-
-#profile {
-	/* background-color: #e7eff6; */
-	background-image: linear-gradient(to top right, #a1c4fd 0%, #ddf4ff 100%);
-	margin-top: -80px;
-	min-height: 600px;
-	clip-path: polygon(0 80px, 100% 0%, 100% calc(100% - 80px), 0 100%);
-	/* clip-path: polygon(0px 0px, 100% 0px, 100% 640px, 0 100%); */
+.quote h1::before {
+	content: open-quote;
 }
 
-#tittle h1 {
-	text-transform: uppercase;
-	text-align: center;
-	color: #2a4d69;
-	margin: 30px 0;
+.quote h1::after {
+	content: close-quote;
 }
-
-
-#content p {}
