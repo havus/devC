@@ -1,0 +1,72 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+/* ========= NAVBAR ========= */
+@media (min-width: 992px) {
+	nav {
+		padding: 0 200px !important;
+		height: 60px;
+	}
+}
+
+
+.jumbotron {
+	min-height: 700px;
+	background-image: linear-gradient(to top left,
+		rgba(3, 57, 108, .5),
+		rgba(173, 203, 227, .7)),
+		url(../assets/blue-monitor.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0 !important;
+	clip-path: polygon(0px 0px, 100% 0px, 100% 640px, 0 100%);
+}
+
+.container {
+	padding: 100px;
+}
+
+.photo-pro {
+	margin-bottom: 50px;
+	height: 250px;
+	width: 250px;
+	overflow: hidden;
+}
+
+.photo-pro img {
+	margin-left: -30px;
+	width: 370px;
+	height: 250px;
+}
+
+.jumbotron h1,
+h5 {
+	display: block;
+	color: #f1f1f1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+/* ============== PROFILE ============== */
+
+#profile {
+	margin-top: -80px;
+	min-height: 600px;
+	background-color: #e7eff6;
+}
+
+#tittle h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #2a4d69;
+	margin: 30px 0;
+}
+
+
+#content p {}
