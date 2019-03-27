@@ -64,7 +64,9 @@ h5 {
 
 #about-me {
 	margin-top: -80px;
-	background-image: linear-gradient(to bottom, rgb(255, 255, 255, .0) 50%, rgba(255, 255, 255, .9) 100%);
+	background-image: linear-gradient(to bottom,
+		rgb(255, 255, 255, .0) 50%,
+		rgba(255, 255, 255, .9) 100%);
 }
 
 #tittle h1 {
@@ -74,13 +76,23 @@ h5 {
 	margin: 30px 0;
 }
 
+#tittle h1::after,
+#portfolio h1::after {
+	content: "";
+	border: 2px solid rgba(100, 100, 100, .7);
+	display: block;
+	border-radius: 20px;
+	width: 80px;
+	margin: 10px auto 40px;
+}
+
 .skill-box {
 	margin-top: 20px;
 	/* border-radius: 10px; */
 }
 
 #icon {
-	border: 3px solid rgba(231, 239, 246, 0.7);
+	border: 3px solid rgba(231, 239, 246, .7);
 	border-radius: 50%;
 	overflow: hidden;
 	height: 85px;
@@ -109,15 +121,6 @@ h5 {
 	color: #4b86b4;
 }
 
-.skill-box h3::after {
-	content: "";
-	border-bottom: 3px solid rgba(139, 139, 139, .7);
-	width: 100px;
-	display: block;
-	/* This will put the pseudo element on its own line. */
-	margin: 10px auto;
-}
-
 .quote {
 	margin: 50px;
 	text-align: center;
@@ -134,5 +137,68 @@ h5 {
 
 #portfolio {
 	min-height: 700px;
-	background-image: linear-gradient(to bottom, rgb(255, 255, 255, .9) 0%, rgba(255, 255, 255, 1) 20%);
+	background-image: linear-gradient(to bottom,
+		rgb(255, 255, 255, .9) 0%,
+		rgba(255, 255, 255, 1) 20%);
+}
+
+#portfolio h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #2a4d69;
+}
+
+#portfolio .container {
+	padding: 50px;
+}
+
+.pic-port {
+	padding: 15px 10px;
+}
+
+.pic-case {
+	border: 5px solid rgba(70, 70, 70, .3);
+	height: 250px;
+}
+
+.pic-case img {
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+}
+
+/* ========== Contact ========== */
+#contact {
+	min-height: 500px;
+	background-image: linear-gradient(to bottom,
+		rgb(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, .1) 80%);
+}
+
+#contact h1 {
+	font-size: 71px;
+	margin-bottom: 30px;
+	font-family: 'rubikregular';
+	color: rgba(10, 10, 10, .7);
+}
+
+#contact span {
+	color: rgba(73, 73, 73, .7);
+	font-size: 29px;
+	margin-bottom: 10px;
+	display: block;
+	font-family: 'rubiklight';
+}
+
+footer {
+	height: 100px;
+	padding: 20px;
+	background-color: rgba(10, 10, 10, .7);
+}
+
+footer p {
+	color: #ececec;
+	text-align: center;
+	margin: 0;
 }
