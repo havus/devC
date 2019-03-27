@@ -1,4 +1,4 @@
-body {
+* {
 	padding: 0;
 	margin: 0;
 }
@@ -23,7 +23,7 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	margin: 0 !important;
-	clip-path: polygon(0px 0px, 100% 0px, 100% 640px, 0 100%);
+	clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 80px), 0 100%);
 }
 
 .container {
@@ -51,14 +51,69 @@ h5 {
 	text-transform: uppercase;
 }
 
+/* ============== PROFILE ============== */
+#skill {
+	margin-top: -95px;
+	min-height: 500px;
+	/* background-color: #b3cde0; */
+	/* (0px 0px, 100% 0px, 100% calc(100% - 70px), 0 100%); */
+	clip-path: polygon(0 80px, 100% 0%, 100% calc(100% - 80px), 0 100%);
+}
 
+.skill-box {
+	margin-top: 20px;
+	/* border-radius: 10px; */
+}
+
+#icon {
+	border: 2px solid rgba(231, 239, 246, 0.7);
+	border-radius: 50%;
+	overflow: hidden;
+	height: 80px;
+	width: 80px;
+	/* background-color: white; */
+	margin: 15px auto;
+}
+
+#icon img {
+	overflow: hidden;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+#networking {
+	margin: 12px auto;
+}
+
+#hard-skill {
+	margin: 15px auto;
+}
+
+#help {
+	margin: 15px auto;
+}
+
+.skill-box h3 {
+	text-align: center;
+	color: #4b86b4;
+}
+
+.skill-box ul {
+	padding: 25px;
+	text-align: center;
+	color: rgb(78, 78, 78);
+}
 
 /* ============== PROFILE ============== */
 
 #profile {
+	/* background-color: #e7eff6; */
+	background-image: linear-gradient(to top right, #a1c4fd 0%, #ddf4ff 100%);
 	margin-top: -80px;
 	min-height: 600px;
-	background-color: #e7eff6;
+	clip-path: polygon(0 80px, 100% 0%, 100% calc(100% - 80px), 0 100%);
+	/* clip-path: polygon(0px 0px, 100% 0px, 100% 640px, 0 100%); */
 }
 
 #tittle h1 {
