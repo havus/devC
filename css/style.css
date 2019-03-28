@@ -40,6 +40,10 @@ body {
 	height: 250px;
 	width: 250px;
 	overflow: hidden;
+	border: 3px solid rgba(23, 48, 161, 0.664);
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .7);
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .7);
 }
 
 .photo-pro img {
@@ -50,13 +54,17 @@ body {
 
 .jumbotron h1,
 h5 {
+	font-family: 'rubikregular';
 	display: block;
 	color: #f1f1f1;
 	text-align: center;
 	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
 .jumbotron h5 {
+	font-family: 'rubiklight';
+	letter-spacing: 2px;
 	text-transform: none;
 }
 
@@ -92,7 +100,7 @@ h5 {
 }
 
 #icon {
-	border: 3px solid rgba(231, 239, 246, .7);
+	border: 2px solid rgba(160, 191, 218, .5);
 	border-radius: 50%;
 	overflow: hidden;
 	height: 85px;
