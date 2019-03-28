@@ -7,13 +7,22 @@ body {
 	background-image: url(../assets/blue-wave.jpg);
 	background-attachment: cover;
 	background-position: 0 400px;
+	font-family: 'rubiklight';
 }
 
 /* ========= NAVBAR ========= */
 @media (min-width: 992px) {
 	nav {
 		padding: 0 200px !important;
-		height: 60px;
+		height: 70px;
+		/* 60px untuk pacuan height */
+		padding-bottom: 10px !important;
+		background: linear-gradient(to bottom, rgba(242, 246, 250, 1) 80%,
+			rgba(75, 135, 180, 0) 95%);
+	}
+
+	nav li {
+		letter-spacing: 2px;
 	}
 }
 
@@ -201,13 +210,24 @@ h5 {
 }
 
 footer {
-	height: 100px;
+	height: 85px;
 	padding: 20px;
-	background-color: rgba(10, 10, 10, .7);
+	background: rgba(10, 10, 10, .6);
 }
 
 footer p {
 	color: #ececec;
 	text-align: center;
 	margin: 0;
+}
+
+footer a {
+	font-family: 'rubikmedium';
+	color: #b3cde0;
+	letter-spacing: 1px;
+}
+
+footer a:hover {
+	color: #e63030;
+	text-decoration: none;
 }
